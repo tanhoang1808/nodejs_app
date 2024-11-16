@@ -2,9 +2,10 @@
   "name": "nodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
-    "start" : "nodemon --inspect app.js",
+    "start": "nodemon --inspect src/app.js",
+    "watch": "sass --watch src/resources/scss:src/public/css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +24,12 @@
   "homepage": "https://github.com/tanhoang1808/nodejs_app#readme",
   "dependencies": {
     "express": "^4.21.1",
-    "nodemon": "^3.1.7"
+    "express-handlebars": "^8.0.1",
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.1.7",
+    "sass": "^1.81.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0"
   }
 }
